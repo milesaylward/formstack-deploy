@@ -16,7 +16,7 @@ To clone and edit this repository follow these steps or to test it out a working
 [Right Here](https://www.google.com)
 
 1. clone this repository
-2. cd <directory>
+2. cd formstack-deploy
 3. npm install
 
 ## Run
