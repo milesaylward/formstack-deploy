@@ -1,7 +1,7 @@
 {
-  "name": "angular1-quickstart",
+  "name": "formstack-sample-app",
   "version": "1.0.0",
-  "description": "AngularJS 1.x Boilerplate to kick start your new project",
+  "description": "Sample App for Formstack Application",
   "readme": "README.md",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/madhusudhand/angular1-quickstart"
+    "url": "https://github.com/milesaylward/formstack-deploy"
   },
-  "keywords": [
-    "material"
-  ],
-  "author": "Madhusudhan Dollu",
+  "author": "Miles Aylward",
   "license": "MIT",
-  "homepage": "https://github.com/madhusudhand/angular2-quickstart/blob/master/README.md",
+  "homepage": "https://milesaylward.github.io/sample-app/",
   "devDependencies": {
     "angular-mocks": "^1.5.9",
     "babel-preset-es2015": "^6.18.0",

@@ -18,14 +18,15 @@
     height:25px;
     border:1px solid black;
     position:relative;
-}
-
-.fill-bar {
-    content:'\A';
-    position:absolute;
-    background:black;
-    top:0; bottom:0;
-    left:0;
+    .fill-bar {
+        content:'click me';
+        position:absolute;
+        background:black;
+        top:0; bottom:0;
+        left:0;
+        width: 0;
+        transition: all 1s ease;
+    }
 }
 
 .percent-list {
@@ -34,4 +35,9 @@
   list-style: none;
   display: flex;
   justify-content: center;
+}
+
+
+.error-text {
+  color: red;
 }

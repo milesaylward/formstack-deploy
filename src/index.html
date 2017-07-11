@@ -7,23 +7,29 @@
 	</head>
 	<body ng-app="app">
 		<div class="page-header header">
-			<img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Formstack_logo_web.gif" alt="Formstack Logo">
-			<h2 class="title">Sample Application</h2>
+			<a href="https://www.formstack.com/" target="_blank">
+				<img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Formstack_logo_web.gif" alt="Formstack Logo">
+			</a>
+			<div class="">
+				<h2 class="title">Sample Application</h2>
+				<h4><a href="https://github.com/milesaylward/formstack-deploy" target="_blank">Code On GitHub</a></h4>
+			</div>
   	</div>
 		<div class="row">
 			<div ng-controller="appController" class="col-xs-12 text-center">
-				<h4>Enter a number between 0 and 1 to see it converted to a percentage</h4>
-				<form role="form" ng-submit="submit()">
-					<input type="number" step="0.0001" min="0" max="1" ng-model="num" class="form-control input">
+				<h4>Enter a number from 0 and 1 to see it converted to a percentage</h4>
+				<div class="alert alert-danger" ng-if="error">{{error}}</div>
+				<form role="form" ng-submit="submit(num)">
+					<input ng-model="num" class="form-control input">
 					<button type="submit" name="button">Submit</button>
-					<button type="button" name="random" ng-click="random()">Random</button>
+					<button type="button" name="random" ng-click="random()" id="random">Random</button>
 					<button type="button" name="clear" ng-click="clear()">Clear</button>
 				</form>
 				<ul ng-repeat="num in percents track by $index" class="percent-list">
 					<li>
 						{{num}}%
 						<div class="percent-bar">
-							<div class="fill-bar" ng-style="{width: {{num}} + '%' }"></div>
+							<div class="progress-bar" ng-style="{width: {{num}} + '%' }"></div>
 						</div>
 					</li>
 				</ul>
