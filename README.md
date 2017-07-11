@@ -13,7 +13,7 @@ Application for converting a float to a decimal.
 
 ## Setup
 To clone and edit this repository follow these steps or to test it out a working copy is hosted via github pages  
-[Right Here](https://www.google.com)
+[Right Here](https://milesaylward.github.io/sample-app/)
 
 1. clone this repository
 2. cd formstack-deploy
