@@ -20,18 +20,18 @@ describe('App Module', () => {
     */
     it('will return an error if a string is passed', () => {
       scope.submit('hello');
-      expect(scope.error).not.toBe('');
+      expect(scope.error).toEqual('You must enter a number!');
       });
     });
 
     it('will return an error if the number is above 1', () => {
       scope.submit(2);
-      expect(scope.error).not.toBe('');
+      expect(scope.error).toEqual('Your number must be between 0 and 1!');
     });
 
     it('will return an error if the number is below 0', () => {
       scope.submit(-2);
-      expect(scope.error).not.toBe('');
+      expect(scope.error).toEqual('Your number must be between 0 and 1!');
     });
 
     /*
